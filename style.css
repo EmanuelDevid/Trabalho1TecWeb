@@ -33,3 +33,34 @@
     background-color: #FFF;
     color: #00F;
 }
+
+.section-releases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.releases-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.releases-video {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.realeases-decription {
+    padding: 10px;
+    width: 50%;
+}
+
+.video {
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 50px;
+}
