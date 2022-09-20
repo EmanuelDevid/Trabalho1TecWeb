@@ -1,0 +1,35 @@
+:root {
+    --blue: #00F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-link {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px;
+    transition: 0.45s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #FFF;
+    color: #00F;
+}
