@@ -62,5 +62,41 @@
 }
 
 .title {
+    margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.highlighted {
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.highlighted-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highlighted-highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highlighted-highlights img {
+    width: 300px;
+    margin: 10px;
+}
+
+.highlighted-highlights select {
+    padding: 5px;
+}
+
+.last-avaliations {
+    display: flex;
+
+}
+
+.last-avaliations div {
+    padding: 10px;
 }
