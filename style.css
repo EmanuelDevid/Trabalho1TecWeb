@@ -1,5 +1,6 @@
 :root {
     --blue: #00F;
+    --green: #14AA4B;
 }
 
 * {
@@ -9,7 +10,7 @@
 }
 
 .header {
-    background-color: var(--blue);
+    background-color: var(--green);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
