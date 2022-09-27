@@ -33,7 +33,7 @@
 
 .nav-link:hover {
     background-color: #FFF;
-    color: #0F0;
+    color: var(--green);
 }
 
 .section-releases {
