@@ -201,3 +201,45 @@
     justify-content: space-between;
     align-items: center;
 }
+.favorites-list{
+    background-color: #14AA4B;
+    padding-bottom: 7%;
+}
+
+.favorites-list h2 {
+    color: #f2f2f2;
+}
+.list-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.favorite-video {
+    background-color: #f2f2f2;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid darkgreen;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+
+.video-description {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+}
+
+.video-description img {
+    width: 50px;
+    margin-right: 10%;
+}
+
+.favorite-video button{
+    padding: 0 8px;
+    color: red;
+    font-weight: 700;
+}
