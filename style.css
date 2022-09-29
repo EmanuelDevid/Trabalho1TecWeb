@@ -69,6 +69,13 @@
     color: var(--green);
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 10% 0 10%;
+}
+
 .section-releases {
     display: flex;
     flex-direction: column;
