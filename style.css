@@ -37,15 +37,17 @@
     color: var(--green);
 }
 
-.buttom-barra-pesquisa {
+.button-barra-pesquisa {
     background-color: var(--branco-principal);
     border: none;
     border-radius: 5px;
     padding: 0.5rem;
     color: var(--green);
+    font-weight: bold;
+    transition: 0.45s ease-in-out;
 }
 
-.buttom-barra-pesquisa:hover {
+.button-barra-pesquisa:hover {
     background-color: #d0d0d0;
     color: var(--green);
 }
@@ -114,14 +116,27 @@
 }
 
 .highlighted {
-    padding: 5px 20px;
+    margin: 0 auto;
     align-items: center;
+    width: 80%;
+    padding: 10px;
 }
 
 .highlighted-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.highlighted-header select {
+    height: 2.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: var(--green);
 }
 
 .highlighted-highlights {
@@ -132,19 +147,52 @@
 }
 
 .highlighted-highlights img {
-    width: 300px;
-    margin: 10px;
+    width: 20rem;
+    margin: 0.4rem;
 }
 
 .highlighted-highlights select {
     padding: 5px;
 }
 
-.last-avaliations {
+.button-destaques-align {
     display: flex;
+    flex-direction: row-reverse;
+}
 
+.button-destaques {
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 10px 0 20px 0;
+    color: var(--branco-principal);
+    font-weight: bold;
+    transition: 0.45s ease-in-out;
+}
+
+.button-destaques:hover {
+    background-color: var(--branco-principal);
+    border: 2px var(--green) solid;
+    color: var(--green);
+}
+
+.last-avaliations {
+    padding: 5px;
+    display: flex;
 }
 
 .last-avaliations div {
     padding: 10px;
+    text-align: justify;
+}
+
+.last-avaliations h3 {
+    margin-bottom: 10px;
+}
+
+.footer-avaliacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
