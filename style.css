@@ -141,14 +141,12 @@
 
 .highlighted-highlights {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .highlighted-highlights img {
-    width: 20rem;
-    margin: 0.4rem;
+    width: 20%;
 }
 
 .highlighted-highlights select {
