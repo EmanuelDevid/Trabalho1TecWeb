@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 .corpo {
@@ -70,6 +72,7 @@
 }
 
 .section {
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -77,6 +80,7 @@
 }
 
 .section-releases {
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,12 +196,30 @@
     text-align: justify;
 }
 
-.last-avaliations h3 {
-    margin-bottom: 10px;
+.subtitle {
+    margin: 10px 0px;
 }
 
 .footer-avaliacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section-entrevistas {
+    background-color: #F2F2F2;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
 }
