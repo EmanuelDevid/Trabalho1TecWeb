@@ -1,12 +1,17 @@
 :root {
     --blue: #00F;
     --green: #14AA4B;
+    --branco-principal: #FFFFFF;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.corpo {
+    background-color: #f2f2f2;
 }
 
 .header {
@@ -24,10 +29,25 @@
 }
 
 .input-barra-pesquisa {
-    padding: 6px;
+    padding: 0.5rem;
+    margin-right: 5px;
     border-radius: 5px;
     border: none;
     margin-left: 5px;
+    color: var(--green);
+}
+
+.buttom-barra-pesquisa {
+    background-color: var(--branco-principal);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--green);
+}
+
+.buttom-barra-pesquisa:hover {
+    background-color: #d0d0d0;
+    color: var(--green);
 }
 
 .logo {
@@ -37,7 +57,7 @@
 .nav-link {
     color: #FFF;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 3px;
     padding: 5px;
     transition: 0.45s ease-in-out;
 }
@@ -51,23 +71,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
 }
+
 .releases-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .releases-video {
     display: flex;
     justify-content: center;
     width: 50%;
+    height: 400px;
 }
 
 .realeases-decription {
-    padding: 10px;
+    padding: 0 20px 20px 20px;
     width: 50%;
+    text-align: justify;
+}
+
+.realeases-decription p {
+    margin-top: 20px;
+}
+
+.estrelas {
+    font-size: 1.25rem;
+}
+
+.estrela-apagada {
+    color: gray;
 }
 
 .video {
@@ -75,8 +110,7 @@
 }
 
 .title {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 .highlighted {
