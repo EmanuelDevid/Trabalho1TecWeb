@@ -233,13 +233,86 @@
     justify-content: start;
 }
 
-.video-description img {
-    width: 50px;
+.favorite-img {
     margin-right: 10%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.favorite-video button{
-    padding: 0 8px;
+.favorite-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.video-favorite-buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.video-favorite-buttom button{
     color: red;
     font-weight: 700;
+    padding: 20%;
+}
+
+.favorite-adicionar {
+    color: blue;
+    width: 2%;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.favorite-adicionar button {
+    color: blue;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.section-form {
+    background-color: lightskyblue;
+    padding-bottom: 7%;
+}
+
+.contact-form {
+    width: 50%;
+    background-color: rgb(0, 0, 131);
+    margin: 0 auto;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.form-group input{
+    display: block;
+    width: 80%;
+    margin: 0 auto; 
+    font-size: 120%;
+    padding: 2% 0;
+    padding-left: 5%;
+    border: solid 2px black;
+    border-radius: 8px;
+}
+
+.form-group button {
+    font-size: 100%;
+    margin: 0 auto; 
+    font-size: 100%;
+    padding: 5% 10%;
+    border-radius: 8px;
+}
+
+.form-group input::placeholder {
+    font-size: 90%;
+    color: black;
 }
