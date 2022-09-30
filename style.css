@@ -259,7 +259,7 @@
 }
 
 .favorite-adicionar {
-    width: 5%;
+    width: 4%;
     border-radius: 50%; 
     justify-content: center;
     align-items: center;
@@ -277,7 +277,7 @@
 
 
 .section-form {
-    background-color: lightskyblue;
+    background-color: #f2f2f2;
     padding-bottom: 7%;
 }
 
@@ -292,7 +292,7 @@
 .contact-form {
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 0, 131);
+    background-color: #14AA4B;
     margin: 0 auto;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
@@ -330,7 +330,7 @@
 }
 
 .form-group button:hover {
-    background-color: #14AA4B;
+    background-color: #07411c;
     transition: all ease-in-out 150ms;
     color: #FFF;
 }
