@@ -146,13 +146,13 @@
     color: var(--green);
 }
 
-.highlighted-highlights {
+.highlighted-highlights, .section-videos-sugeridos{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.highlighted-highlights img {
+.highlighted-highlights img{
     width: 20%;
 }
 
@@ -200,4 +200,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-sugestoes {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+.card-sugestoes p, .card-sugestoes h3 {
+    margin-bottom: 10px;
+}
+
+.card-sugestoes img {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 15px;
 }
