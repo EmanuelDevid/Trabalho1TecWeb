@@ -228,7 +228,7 @@
 }
 
 .video-description {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: start;
 }
@@ -247,72 +247,95 @@
 }
 
 .video-favorite-buttom {
+    width: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2%;
+    justify-content: flex-end;
+    align-self: center;
 }
 
-.video-favorite-buttom button{
-    color: red;
-    font-weight: 700;
-    padding: 20%;
+.video-favorite-buttom img{
+    width: 22px;
+    cursor: pointer;
 }
 
 .favorite-adicionar {
-    color: blue;
-    width: 2%;
-    border-radius: 50%;
-    text-align: center;
+    width: 5%;
+    border-radius: 50%; 
     justify-content: center;
     align-items: center;
     margin-left: 5%;
+    margin-top: 3%;
 }
 
-.favorite-adicionar button {
-    color: blue;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
+.favorite-adicionar img{
+    width: 100%;
 }
+
+.favorite-adicionar{
+    cursor: pointer;
+}
+
 
 .section-form {
     background-color: lightskyblue;
     padding-bottom: 7%;
 }
 
+.title-form {
+    margin-bottom: 2%;
+}
+
+.section-form p {
+    margin-bottom: 5%;
+}
+
 .contact-form {
-    width: 50%;
+    width: 500px;
+    height: 350px;
     background-color: rgb(0, 0, 131);
     margin: 0 auto;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-content {
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px;
 }
 
 .form-group input{
     display: block;
-    width: 80%;
+    width: 220px;
     margin: 0 auto; 
-    font-size: 120%;
-    padding: 2% 0;
-    padding-left: 5%;
+    font-size: 18px;
+    padding: 2px 0;
+    padding-left: 5px;
     border: solid 2px black;
     border-radius: 8px;
 }
 
 .form-group button {
-    font-size: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100px;
     margin: 0 auto; 
-    font-size: 100%;
-    padding: 5% 10%;
+    padding: 5px 10px;
     border-radius: 8px;
 }
 
+.form-group button:hover {
+    background-color: #14AA4B;
+    transition: all ease-in-out 150ms;
+    color: #FFF;
+}
+
 .form-group input::placeholder {
-    font-size: 90%;
+    font-size: 18px;
     color: black;
 }
