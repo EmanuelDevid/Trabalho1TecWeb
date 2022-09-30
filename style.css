@@ -218,3 +218,68 @@
     height: 10rem;
     margin-bottom: 15px;
 }
+
+@media (max-width: 480px){
+    .corpo p {
+        font-size: 1.15rem;
+    }
+
+    .corpo h3 {
+        font-size: 1.4rem;
+    }
+
+    .corpo .title {
+        font-size: 1.55rem;
+    }
+
+    .navegation {
+        display: none;
+    }
+
+    .releases-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .realeases-decription h3 {
+        margin-top: 1.5rem;
+    }
+
+    .realeases-decription p {
+        margin-top: 0.8rem;
+    }
+
+    .releases-video, .realeases-decription {
+        width: 100%;
+        padding: 0;
+    }
+
+    .releases-video {
+        height: 11rem;
+    }
+
+    .highlighted-highlights {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlighted-highlights :nth-child(4) {
+        display: none;
+    }
+
+    .highlighted-highlights img {
+        width: 100%;
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    .last-avaliations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-videos-sugeridos {
+        display: flex;
+        flex-direction: column;
+    }
+}
