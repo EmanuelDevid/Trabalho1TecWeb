@@ -344,6 +344,36 @@
     color: black;
 }
 
+
+.footer {
+    background-color: darkgreen;
+    height: 100px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    height: 20%;
+    background-color: darkgreen;
+}
+
+.footer-copyright p{
+    padding: 8px;
+    color: #d0d0d0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 70px;
+}
+
 @media screen and (max-width:767px) {
     .text-video p {
         display: none;
