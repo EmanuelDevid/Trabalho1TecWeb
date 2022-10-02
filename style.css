@@ -231,6 +231,11 @@
     width: 90%;
     display: flex;
     justify-content: start;
+    cursor: pointer;
+}
+
+.video-description:hover {
+    color: red;
 }
 
 .favorite-img {
@@ -464,5 +469,93 @@
 
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1441px) {
+
+
+    .text-video h3 {
+        font-size: 30   px;
+        padding-right: 5px;
+    }
+
+    .text-video p {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+
+   .favorites-list h2 {
+    font-size: 40px;
+   }
+
+    .video-favorite-buttom img{
+        width: 30px;
+    }
+
+    .favorite-video {
+        padding: 10px 20px;
+    }
+    
+    .favorite-adicionar {
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .favorite-img {
+        width: 100px;
+        margin-right: 50px;
+    }
+
+    .favorite-img img {
+        width: 100px;
+    }
+
+    .contact-form {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .form-group input, .form-group textarea{
+        width: 400px;
+        font-size: 20px;
+        border-radius: 6px;
+    }
+
+    .form-group textarea{
+        height: 100px;
+    }
+
+    .form-group button {
+        padding: 5px 20px;
+        font-size: 20px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .form-group input::placeholder, .form-group textarea::placeholder {
+        font-size: 20px;
+        color: black;
+    }
+
+    .section-form p {
+        font-size: 20px;
+    }
+    .section-form h2 {
+        font-size: 40px;
+    }
+
+    .footer-copyright p {
+        font-size: 20px;
+    }
+
+    .footer-logo img {
+        width: 50px
+    }
+
+    .footer {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
