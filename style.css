@@ -235,7 +235,8 @@
 }
 
 .video-description:hover {
-    color: red;
+    color: darkred;
+    transition: all ease-in-out 200ms;
 }
 
 .favorite-img {
