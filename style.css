@@ -219,6 +219,21 @@
     margin-bottom: 15px;
 }
 
+.header:focus-within  .navegation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 18rem;
+}
+
+@media (max-width: 318px){
+    .barra-pesquisa {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 980px){
     .corpo p {
         font-size: 1.15rem;
@@ -232,9 +247,39 @@
         font-size: 1.55rem;
     }
 
-    .navegation {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-botao {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navegation a, .navegation input {
+        margin-bottom: 0.5rem;
+    }
+
+    .header nav{
         display: none;
     }
+
+    .botao-header {
+        background: transparent;
+        color: white;
+        font-size: 2.5rem;
+        border: none;
+        padding: 0.3rem;
+    }
+
+    .botao-header:hover {
+        cursor: pointer;
+        background-color: var(--green);
+        opacity: 0.5;
+    }
+
 
     .releases-content {
         display: flex;
@@ -318,5 +363,11 @@
 
     .highlighted-highlights :nth-child(4) {
         display: block;
+    }
+}
+
+@media (min-width: 981px){
+    .botao-header {
+        display: none;
     }
 }
