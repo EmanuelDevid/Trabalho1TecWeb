@@ -407,10 +407,8 @@
 
     .favorite-video {
         padding: 5px 10px;
-        border: 1px solid darkgreen;
         border-radius: 15px;
         margin-bottom: 10px;
-        color: darkgreen;
     }
     
     .favorite-adicionar {
@@ -511,7 +509,7 @@
     }
 
     .contact-form {
-        width: 1000px;
+        width: 800px;
         height: 500px;
     }
 
@@ -554,9 +552,6 @@
 
     .footer {
         height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 }
