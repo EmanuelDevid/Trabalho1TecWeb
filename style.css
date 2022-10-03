@@ -227,6 +227,20 @@
     height: 18rem;
 }
 
+.entrevistas-container {
+    flex-direction: column;
+}
+
+.card-entrevistas {
+    width: 90%;
+    margin: 30px;
+}
+
+.card-entrevistas img {
+    width: 100%;
+    max-width: 500px;
+}
+
 @media (max-width: 318px){
     .barra-pesquisa {
         display: flex;
