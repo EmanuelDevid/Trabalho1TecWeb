@@ -221,13 +221,6 @@
     margin-bottom: 15px;
 }
 
-.header:focus-within  .navegation {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    height: 18rem;
-}
 
 .entrevistas-container {
     display: flex;
@@ -302,6 +295,13 @@
         opacity: 0.5;
     }
 
+    .header:focus-within  .navegation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 18rem;
+    }
 
     .releases-content {
         display: flex;
