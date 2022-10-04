@@ -489,9 +489,13 @@
 
 .section-form {
     background-color: #f2f2f2;
-    background-image: url(img/secao_form/papel-de-parede-adesivo-bolas-de-futebol-adesivo-bola.jpg);
     padding-bottom: 7%;
+    background-image: url(img/secao_form/5637342.jpg);
+    background-size: cover;
     color: white;
+    border: 1px solid #FFF;
+    border-left: 0;
+    border-right: 0;
 }
 
 .title-form {
@@ -505,9 +509,9 @@
 .contact-form {
     width: 500px;
     height: 350px;
-    background-color: rgba(0, 255, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -526,6 +530,7 @@
     display: block;
     width: 220px;
     margin: 0 auto; 
+    margin-bottom: 4px;
     font-size: 18px;
     padding: 2px 0;
     padding-left: 5px;
@@ -540,6 +545,7 @@
     margin: 0 auto; 
     padding: 5px 10px;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 .form-group button:hover {
