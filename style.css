@@ -10,6 +10,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -30,51 +31,89 @@ strong {
 }
 
 .livre_sobre{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
     gap: 16px;
     padding: 16px;
     height: 100vh;
-}
+    width: 100%;
+} 
 
 .sobre_mobile--imagem{
     display: none;
 }
 
 @media screen and (max-width: 800px) {
+
+
+    .livre_sobre {
+        flex-direction: column;
+        height: 100%;
+    }
+
     .livre_sobre--imagem {
         display: none;
     }
 
+    .livre_sobre--sobre{
+        width: 100%;
+        align-self: center;
+    }
+
     .sobre_mobile--imagem {
         display: block;
-        margin: 16px;
-        width: 100%;
-        border-radius: 15px;
+        width: 350px;
+        height: 350px;
+        justify-self: center;
         align-self: center;
+
     }
-    
-    .livre_sobre {
+
+    .main_container {
+        flex-direction: column; }
+        
+    .card_container {
         display: flex;
         flex-direction: column;
-    }
+    }    
 
-    .livre_sobre--redes {
+    .card_container h2 {
+        justify-self: center;
         align-self: center;
+        margin: 0 25px 25px 25px;
     }
 
-    p{
-        font-size: 0.9rem;
+    .card{
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        margin: 0;
     }
 
-}
+    .card_panel {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .tags_section  {
+       display: flex;
+       justify-self: center
+    }
+
+    .image_right{
+        display: none;
+    }
+
+    .livre_seis {
+        width: 100vw;
+    }
+    }
+
 .livre_sobre--imagem {
     background-image: url(/assets/img/taçabrasil.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 580px;
+    width: 50%;
     height: 580px;
     justify-self: center;
     align-self: center;
@@ -84,10 +123,13 @@ strong {
 }
 
 .livre_sobre--sobre{
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     color: #252525;
     align-self: center;
     justify-self: center ;
+    width: 50vw;
 }
 
 .sobre__titulo {
@@ -103,7 +145,7 @@ strong {
 }
 
 .editorial__titulo {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .livre_sobre--editorial > p {
@@ -112,79 +154,103 @@ strong {
 
 
 .livre_sobre--redes {
-    padding: 16px;
     grid-column: 3;
-    border-radius: 15px;
+    margin-top: 25px;
 }
 
 .rede-icon {
     width: 2.5rem;
-    margin: 8px ;
+    margin: 5px;
 }
 
-.livre_novidades__imagem1 {
-    width: 180px;
-}
-
-.livre_novidades_conteudo {
-    border-bottom: solid 1px #252525;
+.main_container {
+    margin:  20px 40px 0 40px;
     display: flex;
-    margin-top: 20px;
 }
 
-
-.livre_novidades_conteudo_final {
-    display: flex;
-    margin-top: 20px;
-}
-
-.livre_novidades_corpo {
-    align-self: center;
-    padding: 16px;
-    width: 60%;
-    margin-left: 30px;
+.card_section {
     display: flex;
     flex-direction: column;
 }
-.novidade_titulo {
-    align-self: center;
-}
-.article_subsecao {
+
+.card {
     display: flex;
-    gap: 16px;
+    background-color: #f6f9ff;
+    margin: 10px;
+    width: 100%;
 }
 
-.subsecao__item {
+.card_panel {
+    padding-left: 1rem ;
+}
+
+.card_main_title h2 {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 200;
+}
+
+.tags_section ul{
+    display: flex;
+    list-style: none;
+}
+
+.tags_section li {
+    padding: 5px;
     background-color: grey;
-    border-radius: 15px;
-    padding: 4px;
-    font-size: 15px;
-    margin: 0 0 16px 16px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
-.novidades__titulo {
-    margin: 0 16px 16px 16px;
-}
-
-.novidades__corpo {
-    margin: 0 0 16px 16px;
-    font-size: 15px;
-}
-
-.imagem_novidades {
-    width: 600px;
-    height: 600px;
-    border-radius: 15px;
-}
-
-.imagem__novidades {
+.image_right {
+    background-image: url(/assets/img/taçabrasil.jpg);
+    background-size: cover;
+    width: 50vw;
+    height: 80vh;
+    background-position: center;
     align-self: center;
-    padding: 15px;
+}
+.card_image img{
+    width: 150px;
+    height: 150px;
 }
 
-.flex_novidades {
-    display: flex;
-    width: 1200px;
-    align-self: center;
-    justify-self: center;
+.livre_seis {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh; }
+
+.livre_seis__left {
+    grid-column: 1;
+    grid-row: span 3;
+    background-color: red;
+}
+
+.livre_seis__up {
+    grid-column-start: 2 ;
+    grid-column-end: span 2;
+    grid-row: 1;
+    background-color: green;
+}
+
+.livre_seis__middle {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 2;
+    background-color: orangered;
+}
+
+.livre_seis__down {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 3;
+    background-color: greenyellow;
+}
+
+.livre_seis__right {
+    grid-column: 4;
+    grid-row: span 3;
+    background-color: blue;
 }
