@@ -62,8 +62,8 @@
 .nav-link {
     color: #FFF;
     text-decoration: none;
-    margin-right: 3px;
-    padding: 5px;
+    margin-right: 2px;
+    padding: 1px;
     transition: 0.45s ease-in-out;
 }
 
@@ -222,13 +222,6 @@
     margin-bottom: 15px;
 }
 
-.header:focus-within  .navegation {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    height: 18rem;
-}
 
 .entrevistas-container {
     display: flex;
@@ -320,7 +313,7 @@
     }
 }
 
-@media (max-width: 980px){
+@media (max-width: 1000px){
     .corpo p {
         font-size: 1.15rem;
     }
@@ -366,6 +359,13 @@
         opacity: 0.5;
     }
 
+    .header:focus-within  .navegation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 18rem;
+    }
 
     .releases-content {
         display: flex;
@@ -427,13 +427,13 @@
     }
 }
 
-@media (min-width: 501px) and (max-width: 980px) {
+@media (min-width: 501px) and (max-width: 850px) {
     .releases-video img,  .highlighted-highlights img, .card-sugestoes img{
-        height: 15rem;
+        height: 18rem;
     }
 
     .releases-video {
-        margin-bottom: 3.5rem;
+        margin-bottom: 6rem;
     }
 
     .highlighted-highlights :nth-child(4) {
@@ -441,7 +441,7 @@
     }
 }
 
-@media (min-width: 900px) and (max-width: 980px) {
+@media (min-width: 851px) and (max-width: 1000px) {
     .navegation {
         display: flex;
         padding: 0.5rem;
@@ -452,11 +452,11 @@
     }
 
     .releases-video img,  .highlighted-highlights img, .card-sugestoes img{
-        height: 22rem;
+        height: 25rem;
     }
 
     .releases-video {
-        margin-bottom: 10.5rem;
+        margin-bottom: 14rem;
     }
 
     .highlighted-highlights :nth-child(4) {
@@ -464,11 +464,12 @@
     }
 }
 
-@media (min-width: 981px){
+@media (min-width: 1001px){
     .botao-header {
         display: none;
     }
 }
+
 .favorites-list{
     background-color: #14AA4B;
     padding-bottom: 7%;
@@ -557,6 +558,12 @@
 .section-form {
     background-color: #f2f2f2;
     padding-bottom: 7%;
+    background-image: url(img/secao_form/5637342.jpg);
+    background-size: cover;
+    color: white;
+    border: 1px solid #FFF;
+    border-left: 0;
+    border-right: 0;
 }
 
 .title-form {
@@ -570,9 +577,9 @@
 .contact-form {
     width: 500px;
     height: 350px;
-    background-color: #14AA4B;
+    background-color:rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -591,6 +598,7 @@
     display: block;
     width: 220px;
     margin: 0 auto; 
+    margin-bottom: 4px;
     font-size: 18px;
     padding: 2px 0;
     padding-left: 5px;
@@ -605,6 +613,7 @@
     margin: 0 auto; 
     padding: 5px 10px;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 .form-group button:hover {
@@ -621,31 +630,23 @@
 
 .footer {
     background-color: darkgreen;
-    height: 100px;
-}
-
-.footer-container {
     width: 100%;
-    height: 80%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    
+    padding: 20px 0;
 }
 
-.footer-copyright {
-    height: 20%;
-    background-color: darkgreen;
-}
 
-.footer-copyright p{
+.footer p{
     padding: 8px;
     color: #d0d0d0;
-    text-align: center;
 }
 
-.footer-logo img {
-    width: 4rem;
+.footer img {
+    width: 3rem;
 }
 
 @media screen and (max-width:767px) {
@@ -719,7 +720,7 @@
         font-size: 14px;
     }
 
-    .footer-copyright p {
+    .footer p {
         font-size: 60%;
     }
 
@@ -808,7 +809,7 @@
         font-size: 40px;
     }
 
-    .footer-copyright p {
+    .footer p {
         font-size: 20px;
     }
 
