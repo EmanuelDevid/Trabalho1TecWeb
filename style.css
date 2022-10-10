@@ -90,13 +90,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 3500px;
 }
 
 .releases-video {
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 400px;
+    height: auto;
 }
 
 .realeases-decription {
@@ -119,6 +120,7 @@
 
 .video {
     width: 100%;
+    height: auto;
 }
 
 .title {
@@ -156,7 +158,7 @@
 }
 
 .highlighted-highlights img{
-    width: 20%;
+    width: 22%;
 }
 
 .highlighted-highlights select {
@@ -210,6 +212,7 @@
     flex-direction: column;
     text-align: justify;
     padding: 1.5rem;
+    
 }
 
 .card-sugestoes p, .card-sugestoes h3 {
@@ -220,6 +223,8 @@
     width: 100%;
     height: 10rem;
     margin-bottom: 15px;
+    max-width: 800px;
+    height: auto;
 }
 
 
@@ -469,6 +474,13 @@
         display: none;
     }
 }
+
+@media (min-width: 2001px){
+    body {
+        font-size: 35px;
+    }
+}
+/* fim parte Emanuel */
 
 .favorites-list{
     background-color: #14AA4B;
