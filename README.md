@@ -1,6 +1,8 @@
-# Este foi o primeiro trabalho da disciplina de Tecnologias web, feito pelos seguintes alunos:
+##Trabalho 1 - Tecnologias Web
 
-Emanuel Dêvid Felix
-João Vitor Aguiar
-Igor Pierre
-Yan Arcanjo
+###Este foi o primeiro trabalho da disciplina de Tecnologias web, feito pelos seguintes alunos:
+
+####Emanuel Dêvid Felix
+####João Vitor Aguiar
+####Igor Pierre
+####Yan Arcanjo
