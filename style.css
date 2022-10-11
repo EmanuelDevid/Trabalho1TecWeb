@@ -844,7 +844,6 @@ strong {
 
 .cor__titulo {
     color: rgb(53, 138, 163);
-    font-family: 'Quicksand', sans-serif;
 }
 
 .livre_sobre{
@@ -861,20 +860,22 @@ strong {
 
 @media screen and (max-width: 800px) {
 
-
     .livre_sobre {
         flex-direction: column;
         height: 100%;
+        align-items: flex-start;
     }
 
     .livre_sobre--imagem {
         display: none;
     }
 
-    .livre_sobre--sobre{
+
+    .sobre__paragrafo {
         width: 100%;
-        align-self: center;
     }
+
+
 
     .sobre_mobile--imagem {
         display: block;
@@ -896,7 +897,20 @@ strong {
     .card_container h2 {
         justify-self: center;
         align-self: center;
-        margin: 0 25px 25px 25px;
+        margin: 10px 25px;
+    }
+
+    .card_container p {
+        justify-self: center;
+        align-self: center;
+        margin: 0 25px 25px;
+    }
+
+    .card_container ul {
+        justify-self: center;
+        align-self: center;
+        margin: 0 25px 25px;
+
     }
 
     .card{
@@ -906,14 +920,10 @@ strong {
         margin: 0;
     }
 
-    .card_panel {
-        align-items: center;
-        justify-items: center;
-    }
-
     .tags_section  {
        display: flex;
-       justify-self: center
+       justify-self: center;
+       align-self: center;
     }
 
     .image_right{
@@ -926,7 +936,7 @@ strong {
     }
 
 .livre_sobre--imagem {
-    background-image: url(/assets/img/taçabrasil.jpg);
+    background-image: url(./assets/img/taçabrasil.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1021,7 +1031,7 @@ strong {
 }
 
 .image_right {
-    background-image: url(/assets/img/taçabrasil.jpg);
+    background-image: url(./assets/img/taçabrasil.jpg);
     background-size: cover;
     width: 50vw;
     height: 80vh;
@@ -1034,40 +1044,62 @@ strong {
 }
 
 .livre_seis {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh; }
+    height: 100vh;
+    background-color: rgba(255, 255, 0, 0.562);
+ }
 
 .livre_seis__left {
     grid-column: 1;
     grid-row: span 3;
-    background-color: red;
+    background-image: url(./assets/img/taça-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .livre_seis__up {
     grid-column-start: 2 ;
     grid-column-end: span 2;
     grid-row: 1;
-    background-color: green;
+    background-image: url(./assets/img/grupog.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .livre_seis__middle {
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 2;
-    background-color: orangered;
+    text-align: center;
+    color: #252525;
+    display: flex;
+    width: 100%;
 }
+
+.livre_seis__middle h2 {
+    align-self: center;
+    margin: 0 auto;
+}
+
 
 .livre_seis__down {
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 3;
-    background-color: greenyellow;
+    background-image: url(./assets/img/selecao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .livre_seis__right {
     grid-column: 4;
     grid-row: span 3;
-    background-color: blue;
+    background-image: url(./assets/img/taça-fundo-2.jpg);
+    background-size: cover;
 }
